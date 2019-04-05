@@ -1,7 +1,8 @@
-using System;
-using Xunit;
 using Interview;
+using FluentAssertions;
+using System;
 using System.Threading.Tasks;
+using Xunit;
 
 namespace XunitTests
 {
