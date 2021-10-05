@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "andys8.jest-snippets",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-rename-tag",
+    "ms-vsliveshare.vsliveshare",
+    "rvest.vs-code-prettier-eslint",
+    "tlent.jest-snapshot-language-support",
+  ]
+}
