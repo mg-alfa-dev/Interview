@@ -34,7 +34,7 @@ What we will be building
 
 We will be using [HAL Documents](https://en.wikipedia.org/wiki/Hypertext_Application_Language) to generate a simple React app for retrieving repositories and displaying details about the branch.  The final product will look something like this:
 
-![Final app](https://github.com/mg-alfa-dev/Interview/raw/master/junior-dev-react-hal-question/mockups/react-dev-interview-question.gif)
+![Final app](../../../raw/master/junior-dev-react-hal-question/mockups/react-dev-interview-question.gif)
 
 We will *not* be building this from scratch, only creating a couple of the components and doing some data manipulation to generate the data.
 
