@@ -8,20 +8,26 @@ Setup
    - [Git for Windows](https://gitforwindows.org/) (assuming you're on Windows)
    - [Visual Studio Code](https://code.visualstudio.com/) (Code - Insiders will also work fine)
    - [Node.js](https://nodejs.org/en/) (LTS version, though it really shouldn't matter)
-2. Clone the repository
+2. Create a directory to download the project into, e.g., ```mkdir Interview```
+3. Move into the directory just created ```cd Interview```
+4. Clone the repository
+
    ```bash
-   git clone https://github.com/mg-alfa-dev/Interview.git --no-checkout
-   cd Interview
-   git sparse-checkout init
-   git sparse-checkout add junior-dev-react-hal-question
+   git init --initial-branch master
+   git remote add origin https://github.com/mg-alfa-dev/Interview.git
+   git config core.sparseCheckout true
+   git sparse-checkout set junior-dev-react-hal-question
+   git fetch --depth 1 origin master
+   git co master
+   cd junior-dev-react-hal-question
    cd js # or 'ts' if you prefer typescript
    ```
-3. Install dependencies
+5. Install dependencies
    ```bash
    npm install
    ```
-4. Open Visual Studio Code and install the recommended extensions.  The *Live Share* extension is required in order to conduct the interview.
-5. Open `package.json` and set your name in the `author.name` field.
+6. Open Visual Studio Code and install the recommended extensions.  The *Live Share* extension is required in order to conduct the interview.
+7. Open `package.json` and set your name in the `author.name` field.
 
 ### Optional
 
