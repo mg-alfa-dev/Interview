@@ -60,6 +60,8 @@
   },
   "devDependencies": {
     "@carbon/icons-react": "10.40.0",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
     "@testing-library/react": "9.5.0",
     "@types/carbon-components-react": "7.44.0",
     "@types/carbon__icons-react": "10.31.2",

@@ -1,3 +1,10 @@
+/**
+ * @file This is a stub component.  You must determine how to pull the correct data from the store, display it in the
+ * component, and implement the focus and click handlers.
+ *
+ * Refer to the mockups to determine what information that is and how it should be displayed.  The loading spinner
+ * displayed is the `InlineLoading` component from `carbon-components-react`.
+ */
 import React, { FC, FocusEvent } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { InlineLoading, SideNavMenuItem } from 'carbon-components-react';
@@ -29,14 +36,14 @@ const BranchItem: FC<{ branch: BranchSummary; disabled?: boolean }> = ({ branch,
 
   // const x = useAppSelector(selectX);
 
-  const isActive = false; // TODO
+  const isActive = false; // TODO: set to false if details are loading or a different branch is selected
 
   const handleFocus = (e: FocusEvent<HTMLAnchorElement>) => {
-    // TODO
+    // TODO: blur item if item is disabled
   };
 
   const handleClick = () => {
-    // TODO
+    // TODO: fetch branch details
   };
 
   return (

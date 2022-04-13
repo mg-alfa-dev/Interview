@@ -1,3 +1,6 @@
+/**
+ * @file This component populates the BranchItem components.  It is complete.
+ */
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { SideNav, SideNavItems, SideNavMenu } from 'carbon-components-react';

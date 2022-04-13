@@ -1,3 +1,6 @@
+/**
+ * @file Stub for branch details which will be displayed to the right of the branch list after clicking on a branch.
+ */
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { SkeletonPlaceholder, Tile } from 'carbon-components-react';
