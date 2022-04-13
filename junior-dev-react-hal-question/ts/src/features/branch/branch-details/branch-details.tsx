@@ -1,3 +1,6 @@
+/**
+ * @file Stub for branch details which will be displayed to the right of the branch list after clicking on a branch.
+ */
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { SkeletonPlaceholder, Tile } from 'carbon-components-react';
@@ -37,7 +40,7 @@ const useStyles = makeStyles({
 });
 
 /**
- * Components you'll want to use are `SkeletonPlaceHolder` and `Tile`
+ * Components you'll want to use are `SkeletonPlaceHolder` and `Tile`.
  */
 
 const BranchDetails: FC = () => {

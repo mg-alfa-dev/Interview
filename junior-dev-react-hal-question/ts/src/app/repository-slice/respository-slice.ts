@@ -1,3 +1,8 @@
+/**
+ * @file This slice maintains all information regarding repositories on the server.
+ *
+ * It is complete, and can be used as a reference.
+ */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import HttpClient, { RepositoryDoc, RepositoryListDoc } from 'http-client';
 import _ from 'lodash';

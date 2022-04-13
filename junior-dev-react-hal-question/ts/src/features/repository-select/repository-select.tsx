@@ -1,3 +1,6 @@
+/**
+ * @file This component is the Select at the top left of the screen.  It is complete, and can be used as a reference.
+ */
 import React, { FC, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Dropdown, DropdownSkeleton } from 'carbon-components-react';

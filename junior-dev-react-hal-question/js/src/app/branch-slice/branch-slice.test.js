@@ -1,5 +1,6 @@
+import { AnyAction } from 'redux';
 import Branch from './branch';
-import reducer, { getBranchKey, setSelectedBranch } from './branch-slice';
+import reducer, { fetchBranchDetailsAsync, getBranchKey, selectFetchBranchStatus, selectLoadingBranch, selectSelectedBranch, setSelectedBranch } from './branch-slice';
 
 jest.useFakeTimers();
 

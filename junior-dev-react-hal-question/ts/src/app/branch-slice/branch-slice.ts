@@ -1,3 +1,13 @@
+/**
+ * @file
+ * 
+ * This file is largely finished.  Only three functions need fleshing out:
+ * 
+ * 1. `getBranchKey()` -- this currently returns a non-unique key, but it needs to be unique.
+ * 2. In `extraReducers`, both `fetchBranchDetailsAsync.pending` and `fetchBranchDetailsAsync.fulfilled` need to be implemented.
+ * 
+ * It may help to look at src/app/repository-slice/repository-slice.ts.
+ */
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import HttpClient, { BranchDoc } from 'http-client';
 import _ from 'lodash';
@@ -48,10 +58,10 @@ const branchSlice = createSlice({
         delete state.loadingBranch;
       })
       .addCase(fetchBranchDetailsAsync.pending, (state, action) => {
-        // todo
+        // TODO: set the state's fetchBranch status appropriately
       })
       .addCase(fetchBranchDetailsAsync.fulfilled, (state, action) => {
-        // todo
+        // TODO: set the state's fetchBranch status appropriately
       })
       .addCase(__reset, state => {
         Object.assign(state, _.cloneDeep(initialState));
