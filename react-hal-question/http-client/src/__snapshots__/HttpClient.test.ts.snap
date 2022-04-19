@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calling HttpClient.get() to add a branch throws an error 1`] = `[Error: Resource not found: /repository/abcd/add-branch?name=foo]`;
+
+exports[`calling HttpClient.get() to get a branch without an id throws an error 1`] = `[Error: Branch id must be specified.]`;
+
+exports[`calling HttpClient.get() to get a repository without an id throws an error 1`] = `[Error: Resource not found: /repository]`;
+
+exports[`calling HttpClient.get() with a bad url throws an error 1`] = `[Error: Resource not found: /aslkdjf]`;
+
+exports[`calling HttpClient.post() to add a branch with an empty name throws an error 1`] = `[Error: Branch name must be specified.]`;
+
+exports[`calling HttpClient.post() to add a branch without a name throws an error 1`] = `[Error: Branch name must be specified.]`;
+
+exports[`calling HttpClient.post() to fetch a repository throws an error 1`] = `[Error: Resource not found: /repository/abcd]`;
+
+exports[`calling HttpClient.post() to fetch branch details throws an error 1`] = `[Error: Resource not found: /repository/abcd/fetchBranchDetails?id=1234]`;
+
+exports[`calling HttpClient.post() to fetch the repository list throws an error 1`] = `[Error: Resource not found: /repositoryList]`;
+
+exports[`calling HttpClient.post() with a bad url throws an error 1`] = `[Error: Resource not found: /aslkdjf]`;

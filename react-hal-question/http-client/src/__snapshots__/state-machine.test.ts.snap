@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adding a branch acts as expected: added branch data 1`] = `
+Object {
+  "dateCreated": Any<Date>,
+  "details": "Lorem ipsum and all that nonsense",
+  "id": "foo",
+  "links": Array [
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+      "rel": "self",
+    },
+  ],
+  "name": "bar",
+  "repositoryId": "e2mh4q",
+}
+`;
+
+exports[`adding a branch acts as expected: branch details response data 1`] = `
+Object {
+  "contentType": "application/vnd.Branch",
+  "item": Object {
+    "dateCreated": Any<String>,
+    "details": "Lorem ipsum and all that nonsense",
+    "id": "foo",
+    "links": Array [
+      Object {
+        "contentType": "application/vnd.Branch",
+        "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+        "rel": "self",
+      },
+    ],
+    "name": "bar",
+    "repositoryId": "e2mh4q",
+  },
+  "links": Array [
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+      "rel": "self",
+    },
+  ],
+}
+`;
+
+exports[`adding a branch acts as expected: repository response data 1`] = `
+Object {
+  "contentType": "application/vnd.Repository",
+  "item": Object {
+    "branchSummaries": Object {
+      "b5ob3r": Object {
+        "id": "b5ob3r",
+        "name": "Branch 1",
+        "repositoryId": "e2mh4q",
+      },
+      "foo": Object {
+        "id": "foo",
+        "name": "bar",
+        "repositoryId": "e2mh4q",
+      },
+      "k0dceo": Object {
+        "id": "k0dceo",
+        "name": "Branch 2",
+        "repositoryId": "e2mh4q",
+      },
+    },
+    "id": "e2mh4q",
+    "name": "Run schedule",
+  },
+  "links": Array [
+    Object {
+      "href": "/repository/e2mh4q",
+      "rel": "self",
+    },
+    Object {
+      "href": "/repository/e2mh4q/add-branch?name={{name}}",
+      "rel": "AddBranch",
+    },
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=b5ob3r",
+      "rel": "FetchDetails-b5ob3r",
+    },
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=k0dceo",
+      "rel": "FetchDetails-k0dceo",
+    },
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+      "rel": "FetchDetails-foo",
+    },
+  ],
+}
+`;
+
+exports[`adding a branch acts as expected: response data 1`] = `
+Object {
+  "contentType": "application/vnd.Branch",
+  "item": Object {
+    "dateCreated": Any<String>,
+    "details": "Lorem ipsum and all that nonsense",
+    "id": "foo",
+    "links": Array [
+      Object {
+        "contentType": "application/vnd.Branch",
+        "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+        "rel": "self",
+      },
+    ],
+    "name": "bar",
+    "repositoryId": "e2mh4q",
+  },
+  "links": Array [
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=foo",
+      "rel": "self",
+    },
+  ],
+}
+`;
+
+exports[`getting a repository returns the repository document as expected 1`] = `
+Object {
+  "contentType": "application/vnd.Repository",
+  "item": Object {
+    "branchSummaries": Object {
+      "b5ob3r": Object {
+        "id": "b5ob3r",
+        "name": "Branch 1",
+        "repositoryId": "e2mh4q",
+      },
+      "k0dceo": Object {
+        "id": "k0dceo",
+        "name": "Branch 2",
+        "repositoryId": "e2mh4q",
+      },
+    },
+    "id": "e2mh4q",
+    "name": "Run schedule",
+  },
+  "links": Array [
+    Object {
+      "href": "/repository/e2mh4q",
+      "rel": "self",
+    },
+    Object {
+      "href": "/repository/e2mh4q/add-branch?name={{name}}",
+      "rel": "AddBranch",
+    },
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=b5ob3r",
+      "rel": "FetchDetails-b5ob3r",
+    },
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=k0dceo",
+      "rel": "FetchDetails-k0dceo",
+    },
+  ],
+}
+`;
+
+exports[`getting branch details returns the branch document as expected 1`] = `
+Object {
+  "contentType": "application/vnd.Branch",
+  "item": Object {
+    "dateCreated": "Fri, 01 Oct 2021 20:42:46 GMT",
+    "details": "I am Branch 1.  Enjoy.",
+    "id": "b5ob3r",
+    "links": Array [
+      Object {
+        "href": "/e2mh4q/fetchBranchDetails?id=b5ob3r",
+        "rel": "fetchDetails-b5ob3r",
+      },
+    ],
+    "name": "Branch 1",
+    "repositoryId": "e2mh4q",
+  },
+  "links": Array [
+    Object {
+      "contentType": "application/vnd.Branch",
+      "href": "/repository/e2mh4q/fetchBranchDetails?id=b5ob3r",
+      "rel": "self",
+    },
+  ],
+}
+`;
+
+exports[`getting the repository list returns the repositories document as expected 1`] = `
+Object {
+  "contentType": "application/vnd.RepositoryList",
+  "item": Array [
+    Object {
+      "contentType": "application/vnd.Repository",
+      "item": Object {
+        "branchSummaries": Object {
+          "b5ob3r": Object {
+            "id": "b5ob3r",
+            "name": "Branch 1",
+            "repositoryId": "e2mh4q",
+          },
+          "k0dceo": Object {
+            "id": "k0dceo",
+            "name": "Branch 2",
+            "repositoryId": "e2mh4q",
+          },
+        },
+        "id": "e2mh4q",
+        "name": "Run schedule",
+      },
+      "links": Array [
+        Object {
+          "href": "/repository/e2mh4q",
+          "rel": "self",
+        },
+        Object {
+          "href": "/repository/e2mh4q/add-branch?name={{name}}",
+          "rel": "AddBranch",
+        },
+        Object {
+          "contentType": "application/vnd.Branch",
+          "href": "/repository/e2mh4q/fetchBranchDetails?id=b5ob3r",
+          "rel": "FetchDetails-b5ob3r",
+        },
+        Object {
+          "contentType": "application/vnd.Branch",
+          "href": "/repository/e2mh4q/fetchBranchDetails?id=k0dceo",
+          "rel": "FetchDetails-k0dceo",
+        },
+      ],
+    },
+    Object {
+      "contentType": "application/vnd.Repository",
+      "item": Object {
+        "branchSummaries": Object {
+          "b5ob3r": Object {
+            "id": "b5ob3r",
+            "name": "Branch 3",
+            "repositoryId": "5mcf7i",
+          },
+          "rvpylf": Object {
+            "id": "rvpylf",
+            "name": "Branch 4",
+            "repositoryId": "5mcf7i",
+          },
+        },
+        "id": "5mcf7i",
+        "name": "Walk unscheduled (read-only)",
+      },
+      "links": Array [
+        Object {
+          "href": "/repository/5mcf7i",
+          "rel": "self",
+        },
+        Object {
+          "contentType": "application/vnd.Branch",
+          "href": "/repository/5mcf7i/fetchBranchDetails?id=b5ob3r",
+          "rel": "FetchDetails-b5ob3r",
+        },
+        Object {
+          "contentType": "application/vnd.Branch",
+          "href": "/repository/5mcf7i/fetchBranchDetails?id=rvpylf",
+          "rel": "FetchDetails-rvpylf",
+        },
+      ],
+    },
+  ],
+  "links": Array [
+    Object {
+      "href": "/repositoryList",
+      "rel": "self",
+    },
+  ],
+}
+`;
